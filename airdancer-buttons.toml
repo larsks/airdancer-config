@@ -1,0 +1,36 @@
+short-press-duration = "2s"
+long-press-duration = "5s"
+timeout = "10s"
+
+[[buttons]]
+name = "green0"
+driver = "event"
+spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:296"
+click-action = "/home/dancer/bin/dancerctl toggle left1"
+double-click-action = "/home/dancer/bin/dancerctl blink left1 --period 2 --duration 10"
+short-press-action = "/home/dancer/bin/speak rebooting; sudo reboot"
+long-press-action = "/home/dancer/bin/speak power off; sudo poweroff"
+
+[[buttons]]
+name = "green1"
+driver = "event"
+spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:297"
+click-action = "/home/dancer/bin/dancerctl toggle left0"
+double-click-action = "/home/dancer/bin/dancerctl blink left0 --period 2 --duration 10"
+short-press-action = "/home/dancer/actions/speak-status"
+
+[[buttons]]
+name = "blue0"
+driver = "event"
+spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:298"
+click-action = "/home/dancer/bin/dancerctl toggle right0"
+double-click-action = "/home/dancer/bin/dancerctl blink right0 --period 2 --duration 10"
+short-press-action = "/home/dancer/actions/play-clip sad-trombone.wav"
+
+[[buttons]]
+name = "blue1"
+driver = "event"
+spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:299"
+click-action = "/home/dancer/bin/dancerctl toggle right1"
+double-click-action = "/home/dancer/bin/dancerctl blink right1 --period 2 --duration 10"
+short-press-action = "/home/dancer/actions/play-clip wizard-needs-food.wav"
