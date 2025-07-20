@@ -8,3 +8,5 @@ items-per-page = 20
 alsa-device = "default"
 alsa-card-name = ""
 base-url = "/sounds/"
+
+scan-interval = 10
