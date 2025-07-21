@@ -11,4 +11,4 @@ mailbox = "smart/Notification"
 
 [[monitor.triggers]]
 regex-pattern = "Your Relish order from .* is here"
-command = "/home/dancer/bin/dancerctl on left0 --duration 10"
+command = "dancerctl on left0 --duration 10"
