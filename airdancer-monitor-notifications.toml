@@ -11,4 +11,12 @@ mailbox = "smart/Notification"
 
 [[monitor.triggers]]
 regex-pattern = "Your Relish order from .* is here"
-command = "dancerctl on left0 --duration 10"
+command = "/home/dancer/actions/lunch-arrived"
+
+[[monitor.triggers]]
+regex-pattern = "Your Relish delivery from .* is running late."
+command = "/home/dancer/actions/lunch-late"
+
+[[monitor.triggers]]
+regex-pattern = "We see your order is running late. Sorry for the delay on your Relish order"
+command = "/home/dancer/actions/lunch-late"
