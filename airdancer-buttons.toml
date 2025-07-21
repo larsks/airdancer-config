@@ -25,6 +25,7 @@ driver = "event"
 spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:298"
 click-action = "dancerctl toggle right0"
 double-click-action = "dancerctl blink right0 --period 2 --duration 10"
+triple-click-action = "dancerctl off all"
 short-press-action = "/home/dancer/actions/play-clip sad-trombone.wav"
 
 [[buttons]]
