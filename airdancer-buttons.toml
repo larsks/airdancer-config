@@ -8,8 +8,8 @@ driver = "event"
 spec = "/dev/input/by-id/usb-Microntek_USB_Joystick-event-joystick:EV_KEY:296"
 click-action = "dancerctl toggle left1"
 double-click-action = "dancerctl blink left1 --period 2 --duration 10"
-short-press-action = "speak rebooting; sudo reboot"
-long-press-action = "speak power off; sudo poweroff"
+short-press-action = "/home/dancer/actions/system-reboot"
+long-press-action = "/home/dancer/actions/system-shutdown"
 
 [[buttons]]
 name = "green1"
