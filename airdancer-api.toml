@@ -13,6 +13,12 @@ pins = [
   "GPIO22:active-low",
 ]
 
+[collections.remote]
+driver = 'tasmota'
+
+[collections.remote.driverconfig]
+addresses = ["10.42.0.237", "10.42.0.60"]
+
 [switches.right0]
 spec = "outlets.0"
 
@@ -25,6 +31,12 @@ spec = "outlets.2"
 [switches.left1]
 spec = "outlets.3"
 
+[switches.remote1]
+spec = "remote.1"
+
+[switches.remote0]
+spec = "remote.0"
+
 [groups.left]
 switches = ["left0", "left1"]
 
@@ -36,3 +48,6 @@ switches = ["right1", "left1"]
 
 [groups.rear]
 switches = ["right0", "left0"]
+
+[groups.remote]
+switches = ["remote0", "remote1"]
